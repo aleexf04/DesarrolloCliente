@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Carrito de Compra - Inicio</title>
+    <script src="funcionesCarrito.js"></script>
+</head>
+<body>
+
+    <h1>Tienda - Añadir al Carrito</h1>
+
+    <form onsubmit="return false;">
+        <div>
+            <label for="cantidad">Cantidad:</label>
+            <input type="text" id="cantidad" placeholder="Ej: 2">
+        </div>
+        <br>
+        <div>
+            <label for="descripcion">Descripción:</label>
+            <input type="text" id="descripcion" placeholder="Ej: chicles">
+        </div>
+        <br>
+        <button type="button" onclick="comprarProducto()">Comprar producto</button>
+        <button type="button" onclick="verCarrito()">Ver carrito</button>
+    </form>
+
+    <br><hr><br>
+
+    <a href="pagina2.html">Ir a la segunda página para comprobar persistencia</a>
+
+</body>
+</html>
